@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>homework4_part1</title>
+</head>
+<body>
+	<script>
+		function triangle(symbol,height){
+			
+			var message = '';
+			
+			for (var i = 1; i <= height; i++) {
+				
+              for (var j = 1; j <= i; j++) {
+              
+            	message += symbol;
+            
+              }
+
+              message += "\n"
+                
+
+		    }
+
+		    return message ;
+		}
+
+		var height = prompt(`высота?`, `3`);
+		var symbol = prompt(`любая буква`,`*`)
+		if(symbol.length <= 1){
+			alert(triangle(symbol,height))
+		}else{alert(`NOOOOOOO`);
+
+		}
+	</script>
+	
+</body>
+</html>

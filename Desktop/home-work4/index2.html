@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>function</title>
+</head>
+<body>
+ <script>
+ 	function f (a = 2, b = 3, c ){
+
+ 		if(typeof c === `function`){
+ 			return c(a,b)
+ 		}else{
+ 			return sum (a,b)
+ 		}
+ 		
+        function sum (a = 2, b = 3) {
+
+          return a + b;
+        }
+    }    
+        
+            alert(f());//function f whithout argument return 5
+
+    function funC (a,b){
+
+    	return a + b ; 
+    }        
+           alert(funC())
+           alert(funC(10,10))
+           alert(funC(10,10,10))
+           alert(funC(10,10,funC));
+
+           
+    
+    
+    
+
+
+
+ </script>
+
+	
+</body>
+</html>
